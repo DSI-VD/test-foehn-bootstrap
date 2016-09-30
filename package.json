@@ -23,6 +23,7 @@
   "homepage": "https://github.com/DSI-VD/test-foehn-bootstrap#readme",
   "devDependencies": {
     "bootstrap": "github:twbs/bootstrap#v4-dev",
-    "foehn": "git+https://github.com/DSI-VD/foehn.git"
+    "foehn": "git+https://github.com/DSI-VD/foehn.git",
+    "gulp": "^3.9.1"
   }
 }
