@@ -25,6 +25,7 @@
     "bootstrap": "github:twbs/bootstrap#v4-dev",
     "del": "^2.2.2",
     "foehn": "git+https://github.com/DSI-VD/foehn.git",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
   }
 }

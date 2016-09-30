@@ -1,12 +1,14 @@
 var gulp = require('gulp');
 var del = require('del');
+var sass = require('gulp-sass');
 
 gulp.task('clean', function () {
         return del('./assets');
     });
 
 gulp.task('copy-bootstrap', function() {
-   gulp.src('./node_modules/bootstrap/dist/**/*.*')
+  return gulp.src('./src/styles/**/*.scss')
+   .pipe(sass().on('error', sass.logError))
    .pipe(gulp.dest('./assets/bootstrap'));
 });
 
