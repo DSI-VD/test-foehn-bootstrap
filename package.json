@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/DSI-VD/test-foehn-bootstrap#readme",
   "devDependencies": {
-    "bootstrap": "github:twbs/bootstrap#v4-dev"
+    "bootstrap": "github:twbs/bootstrap#v4-dev",
+    "foehn": "git+https://github.com/DSI-VD/foehn.git"
   }
 }
