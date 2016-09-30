@@ -1,4 +1,9 @@
 var gulp = require('gulp');
+var del = require('del');
+
+gulp.task('clean', function () {
+        return del('./assets');
+    });
 
 gulp.task('copy-bootstrap', function() {
    gulp.src('./node_modules/bootstrap/dist/**/*.*')
@@ -10,6 +15,6 @@ gulp.task('copy-foehn', function() {
    .pipe(gulp.dest('./assets/foehn'));
 });
 
-gulp.task('default', ['copy-bootstrap', 'copy-foehn'], function() {
+gulp.task('default', ['clean', 'copy-bootstrap', 'copy-foehn'], function() {
   // place code for your default task here
 });
