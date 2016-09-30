@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/DSI-VD/test-foehn-bootstrap/issues"
   },
-  "homepage": "https://github.com/DSI-VD/test-foehn-bootstrap#readme"
+  "homepage": "https://github.com/DSI-VD/test-foehn-bootstrap#readme",
+  "devDependencies": {
+    "bootstrap": "github:twbs/bootstrap#v4-dev"
+  }
 }
