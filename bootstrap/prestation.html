@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestation page - Foehn Bootstrap 4 theme</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-11 offset-lg-1">
+          <nav class="breadcrumb">
+            <a href="#" class="breadcrumb-item">vd.ch</a>
+            <a href="#" class="breadcrumb-item">Environnement</a>
+            <a href="#" class="breadcrumb-item">Air</a>
+          </nav>
+          <h1>Polluants atmosphériques</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-8 m-t-3">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>
+            <a href="#">Comment agir, fiche à télécharger</a>
+          </p>
+
+          <dl class="row m-t-3">
+            <dt class="col-sm-3">Nom</dt>
+            <dd class="col-sm-9">Ozone</dd>
+            <dt class="col-sm-3">Surnom</dt>
+            <dd class="col-sm-9">O3</dd>
+          </dl>
+        </div>
+        <div class="col-sm-4">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Poussières fines</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ozone</a>
+              <ul>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Qu'est-ce que l'ozone?</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Comment améliorer l'air?</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">En cas de canicule</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Les composants organiques</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Ammoniac -disabled-</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Qualité de l'air</a>
+            </li>
+          </ul>
+
+          <div>
+            <h3 class="m-t-3">Direction générale de l'environnement</h3>
+            <p>Rue de Caroline 11<br>1014 Lausanne</p>
+            <ul>
+              <li><a href="#">voir sur la carte</a></li>
+              <li><a href="#">en savoir plus sur l'autorité</a></li>
+            </ul>
+            <p>
+              <a class="btn btn-secondary btn-sm" href="#" role="button">Contacter l'office</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      // init popovers
+      $(function () {
+        $('[data-toggle="popover"]').popover();
+      });
+
+      // init tooltips
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+  </body>
+</html>
