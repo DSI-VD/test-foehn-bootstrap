@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example page - Foehn Bootstrap 4 theme</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <h1>Demande d'autorisation de feu en plein air</h1>
+      </div>
+      <form action="#" class="form">
+        <div class="row m-t-3">
+          <div class="col-sm-4">
+            <h3>Question 2 de 9</h3>
+            <ol>
+              <li><a href="#">Informations</a></li>
+              <li class="active"><span>Identification</span></li>
+              <li><span>Objet de l'autorisation</span></li>
+              <li><span>Récapitulatif</span></li>
+              <li><span>Confirmation</span></li>
+            </ol>
+          </div>
+          <div class="col-sm-8">
+            <fieldset>
+              <legend>Veuillez saisir les informations propres au bénéficiaire ainsi qu'au responsable de la demande d'autorisation :</legend>
+            </fieldset>
+            <div class="card">
+              <div class="card-header">Responsable de l'incinération</div>
+              <div class="card-block">
+                <div class="form-group row required">
+                  <label for="inputCivilite" class="col-sm-3 col-form-label text-sm-right">Civilité</label>
+                  <div class="col-sm-9 col-md-6 col-lg-4">
+                    <input class="form-control" type="email" name="email">
+                  </div>
+                </div>
+                <div class="form-group row required">
+                  <label for="name" class="col-sm-3 col-form-label text-sm-right">Nom</label>
+                  <div class="col-sm-9 col-md-6 col-lg-4">
+                    <input class="form-control" type="text" name="name" placeholder="Nom" required>
+                  </div>
+                </div>
+                <div class="form-group row required">
+                  <label for="email" class="col-sm-3 col-form-label text-sm-right">Email</label>
+                  <div class="col-sm-9 col-md-6 col-lg-4">
+                    <div class="input-group">
+                      <span class="input-group-addon">@</span>
+                      <input class="form-control" type="email" name="email" placeholder="Email">
+                    </div>
+                  </div>
+                </div>
+                <p>…</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">Bénéficiaire de l'incinération</div>
+              <div class="card-block">
+                <div class="form-group row">
+                  <label for="same" class="col-sm-3 text-sm-right">Identique au responsable</label>
+                  <div class="col-sm-9">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"> Oui
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <p>…</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <button type="button" class="btn btn-secondary pull-xs-left">Retour</button>
+                <button type="button" class="btn btn-primary pull-xs-right">Continuer</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      // init popovers
+      $(function () {
+        $('[data-toggle="popover"]').popover();
+      });
+
+      // init tooltips
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+  </body>
+</html>
