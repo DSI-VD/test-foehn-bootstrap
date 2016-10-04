@@ -5,6 +5,7 @@ var scopify = require('postcss-scopify');
 var rename = require("gulp-rename");
 var sourcemaps = require('gulp-sourcemaps');
 var gulpSequence = require('gulp-sequence');
+var browserSync = require('browser-sync').create();
 
 gulp.task('clean', function() {
     return del('./assets');
@@ -48,5 +49,16 @@ gulp.task('scope-foehn', function() {
         .pipe(gulp.dest('./assets/foehn'));
 });
 
+// Static server
+gulp.task('serve', function() {
+    browserSync.init({
+        server: {
+            baseDir: "./"
+        }
+    });
+
+    gulp.watch("*.html").on('change', browserSync.reload);
+});
+
 //gulp.task('default', ['clean', 'copy-bootstrap', 'scope-bootstrap', 'copy-foehn', 'scope-foehn'], function() {
-gulp.task('default', gulpSequence('clean', ['copy-bootstrap', 'copy-foehn'], ['scope-bootstrap', 'scope-foehn']));
+gulp.task('default', gulpSequence('clean', ['copy-bootstrap', 'copy-foehn'], ['scope-bootstrap', 'scope-foehn'], 'serve'));
