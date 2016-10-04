@@ -27,6 +27,7 @@
     "foehn": "git+https://github.com/DSI-VD/foehn.git",
     "foehn-bootstrap": "github:dsi-vd/foehn-bootstrap#feature/vd-styles",
     "gulp": "^3.9.1",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-postcss": "^6.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-sequence": "^0.4.6",
