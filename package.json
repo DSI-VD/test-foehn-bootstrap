@@ -26,6 +26,10 @@
     "del": "^2.2.2",
     "foehn": "git+https://github.com/DSI-VD/foehn.git",
     "gulp": "^3.9.1",
-    "gulp-sass": "^2.3.2"
+    "gulp-postcss": "^6.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sequence": "^0.4.6",
+    "gulp-sourcemaps": "^1.6.0",
+    "postcss-scopify": "^0.1.9"
   }
 }
