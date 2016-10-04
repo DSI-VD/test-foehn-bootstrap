@@ -12,7 +12,7 @@ gulp.task('clean', function() {
 });
 
 gulp.task('copy-bootstrap', function() {
-    return gulp.src('./node_modules/bootstrap/dist/**/*.*')
+    return gulp.src('./node_modules/foehn-bootstrap/dist/**/*.*')
         .pipe(gulp.dest('./assets/bootstrap'));
 });
 

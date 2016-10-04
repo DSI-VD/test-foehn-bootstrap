@@ -22,10 +22,10 @@
   },
   "homepage": "https://github.com/DSI-VD/test-foehn-bootstrap#readme",
   "devDependencies": {
-    "bootstrap": "github:twbs/bootstrap#v4-dev",
     "browser-sync": "^2.17.0",
     "del": "^2.2.2",
     "foehn": "git+https://github.com/DSI-VD/foehn.git",
+    "foehn-bootstrap": "github:dsi-vd/foehn-bootstrap#feature/vd-styles",
     "gulp": "^3.9.1",
     "gulp-postcss": "^6.2.0",
     "gulp-rename": "^1.2.2",
