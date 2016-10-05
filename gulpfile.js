@@ -66,7 +66,7 @@ gulp.task('serve', ['default'], function() {
         }
     });
 
-    gulp.watch("*.html").on('change', browserSync.reload);
+    gulp.watch("*.html", ['copy-html']).on('change', browserSync.reload);
 });
 
 //Deploy
